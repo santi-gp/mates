@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Maravillas matemáticas" />
+  <meta name="keywords" content="HTML,CSS,JavaScript" />
+  <meta name="author" content="Ricardo" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="css/main.css" type="text/css" rel="stylesheet" />
+  <link href="css/styles.css" type="text/css" rel="stylesheet" />
+  <link href="css/responsive.css" type="text/css" rel="stylesheet" />
+  <link href="css/fonts.css" type="text/css" rel="stylesheet" />
+  <script src="js/nav-responsive.js"></script>
+  <script src="js/nav-accordion.js"></script>
+  <title>Matemáticas</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="bgc-1 flex-row jc-between ai-center">
+      <div class="logo-site px-2"><i class="icon-logo"></i></div>
+      <div class="name-site">
+        <h1>Maravillas</h1>
+        <h4>Matemáticas</h4>
+      </div>
+      <div class="nav-responsive px-2 txt-right"><i onclick="menu();" class="icon-bar"></i></div>
+    </header>
+    <nav id="nav" class="nav bgc-3">
+      <ul class="flex-row">
+        <li>
+          <a href="index.html"><span><i class="icon-home"></i></span><span>Inicio</span></a>
+        </li>
+        <li>
+          <a class="activated" href="numbers.html"><span><i class="icon-numerical"></i></span><span>Los
+              números</span></a>
+        </li>
+        <li>
+          <a href="fractals.html"><span><i class="icon-fractal"></i></span><span>Fractales</span></a>
+        </li>
+        <li>
+          <a href="popurri.html"><span><i class="icon-project"></i></span><span>Popurrí</span></a>
+        </li>
+      </ul>
+    </nav>
+    <main class="flex-row">
+      <article class="p-2">
+        <h6>Los Números / Relaciones de potencias</h6>
+        <div class="responsive2">
+          <input type="checkbox" name="group" id="show-nav" />
+          <label for="show-nav"><span>Los Números</span><i>&#8711;</i></label>
+          <ul class="show-menu">
+            <li><a href="numbers-patterns.html">Patrones sorprendentes</a></li>
+            <li><a href="numbers-1089.html">EL número 1089</a></li>
+            <li><a href="numbers-palindromo.html">Números palíndromos</a></li>
+            <li><a class="select" href="numbers-power.html">Relaciones de potencias</a></li>
+            <li><a href="multi-miss.html">Multiplicación</a></li>
+            <li><a href="multi-11.html">Multiplicación por 11</a></li>
+            <li><a href="multi-21.html">Multiplicación por 21, 31, 41,...</a></li>
+          </ul>
+        </div>
+        <h2>Belleza de los números</h2>
+        <section>
+          <h3>Increíbles relaciones de potencias</h3>
+          <div>
+            <p>Nuestro sistema numérico tiene muchas características inusuales incorporadas en él.
+              Descubrirlos sin duda puede ser una experiencia gratificante. La mayoría de los estudiantes
+              necesitan ser persuadidos para buscar estas relaciones. Aquí es donde entra el maestro.</p>
+            <p>Muéstreles la siguiente relación y pídales que describan lo que está pasando aquí.</p>
+            <div class="equation">
+              <span>81 = &#40;8 &#43; 1&#41;<sup>2</sup> = 9<sup>2</sup></span>
+            </div>
+            <p>Luego pídales que vean si hay otro número para el que esta relación podría ser cierta.
+              No espere demasiado tiempo antes de mostrarles lo siguiente.</p>
+            <div class="equation">
+              <span>4913 = &#40;4 &#43; 9 &#43; 1 &#43; 3&#41; <sup>3</sup> = 17 <sup>3</sup></span>
+            </div>
+            <p>Ahora los estudiantes deben darse cuenta de que la suma de los dígitos de este número tomada a una
+              potencia es igual al número. Esto es absolutamente asombroso, pues verán si intentan encontrar otros
+              ejemplos.</p>
+            <p>La siguiente lista le proporcionará muchos ejemplos de estos números inusuales. ¡Diviértete!</p>
+            <p>¡Quién dijo que los números no pueden formar bellas relaciones! Mostrando a sus estudiantes algunas
+              de estas situaciones únicas podrían darles la sensación de que hay más <q>números</q> de lo que se conoce.
+              Deben animarse no solo a verificar estas relaciones, sino también a encontrar otras que puedan ser
+              consideradas <q>bellas</q>.</p>
+            <p>Observe los exponentes consecutivos.</p>
+            <div class="flex-column ai-center">
+              <span> 135 = 1 <sup>1</sup> + 3 <sup>2</sup> + 5 <sup>3</sup> </span>
+              <span> 175 = 1 <sup>1</sup> + 7 <sup>2</sup> + 5 <sup>3</sup> </span>
+              <span> 518 = 5 <sup>1</sup> + 1 <sup>2</sup> + 8 <sup>3</sup> </span>
+              <span> 598 = 5 <sup>1</sup> + 9 <sup>2</sup> + 8 <sup>3</sup></span>
+            </div>
+            <p>Ahora, tomado un lugar más lejos, conseguimos</p>
+            <div class="flex-column ai-center">
+              <span> 1306 = 1 <sup>1</sup> + 3 <sup>2</sup> + 0 <sup>3</sup> + 6 <sup>4</sup></span>
+              <span> 1676 = 1 <sup>1</sup> + 6 <sup>2</sup> + 7 <sup>3</sup> + 6 <sup>4</sup></span>
+              <span> 2427 = 2 <sup>1</sup> + 4 <sup>2</sup> + 2 <sup>3</sup> + 7 <sup>4</sup></span>
+            </div>
+          </div>
+        </section>
+      </article>
+      <aside class="aside bgc-2 flex-column ai-center p-2">
+        <div class="secondary">
+          <ul class="accordion">
+            <li onclick="javascript:show('smenu1','img1');"><span>Belleza de los números</span><i id="img1"
+                style="transform:rotate(180deg);">&#8711;</i>
+              <ul class="flex-row" id="smenu1" style="display: block;">
+                <!-- <li><a href="introduction-1.html">Introducción</a></li> -->
+                <li><a href="numbers-patterns.html">Patrones sorprendentes</a></li>
+                <li><a href="numbers-1089.html">EL número 1089</a></li>
+                <li><a href="numbers-palindromo.html">Números palíndromos</a></li>
+                <li><a class="select" href="numbers-power.html">Relaciones de potencias</a></li>
+              </ul>
+            </li>
+            <li onclick="javascript:show('smenu2','img2');"><span>Maravillas aritméticas</span><i id="img2"
+                style="transform:rotate(0deg);">&#8711;</i>
+              <ul class="d-none" id="smenu2">
+                <!-- <li><a href="introduction-2.html">Introducción</a></li> -->
+                <li><a href="multi-miss.html">Multiplicación</a></li>
+                <li><a href="multi-11.html">Multiplicación por 11</a></li>
+                <li><a href="multi-21.html">Multiplicación por 21, 31, 41,...</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </main>
+    <footer class="footer bgc-1 flex-row wrap ac-strech color-2">
+      <section class="foot-nav f-grow1 pyx-12">
+        <h5 class="mb-1">Mapa web</h5>
+        <a href="index.html">Inicio</a>
+        <a href="numbers.html">Los números</a>
+        <a href="fractals.html">Fractales</a>
+        <a href="popurri.html">Popurrí</a>
+      </section>
+      <section class="foot-contact f-grow1 pyx-12">
+        <h5 class="mb-1">Contacto</h5>
+        <address class="flex-row">
+          <a href="https://www.linkedin.com/in/rguevaraponce/"><i class="icon-linkedin"></i></a>
+          <a href="http://richi071175@gmail.com"><i class="icon-envelop"></i></a>
+          <a href="https://github.com/santi-gp"><i class="icon-github"></i></a>
+        </address>
+      </section>
+      <section class="foot-copyright f-basis100 txt-center bgc-black f-grow1 px-2">
+        <h5 class="my-1">Copyright &copy;</h5>
+      </section>
+    </footer>
+  </div>
+</body>
+
+</html>

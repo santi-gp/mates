@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Maravillas matemáticas" />
+  <meta name="keywords" content="HTML,CSS,JavaScript" />
+  <meta name="author" content="Ricardo" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="css/main.css" type="text/css" rel="stylesheet" />
+  <link href="css/styles.css" type="text/css" rel="stylesheet" />
+  <link href="css/responsive.css" type="text/css" rel="stylesheet" />
+  <link href="css/fonts.css" type="text/css" rel="stylesheet" />
+  <script src="js/nav-responsive.js"></script>
+  <script src="js/nav-accordion.js"></script>
+  <title>Matemáticas</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="bgc-1 flex-row jc-between ai-center">
+      <div class="logo-site px-2"><i class="icon-logo"></i></div>
+      <div class="name-site">
+        <h1>Maravillas</h1>
+        <h4>Matemáticas</h4>
+      </div>
+      <div class="nav-responsive px-2 txt-right"><i onclick="menu();" class="icon-bar"></i></div>
+    </header>
+    <nav id="nav" class="nav bgc-3">
+      <ul class="flex-row">
+        <li>
+          <a href="index.html"><span><i class="icon-home"></i></span><span>Inicio</span></a>
+        </li>
+        <li>
+          <a class="activated" href="numbers.html"><span><i class="icon-numerical"></i></span><span>Los
+              números</span></a>
+        </li>
+        <li>
+          <a href="fractals.html"><span><i class="icon-fractal"></i></span><span>Fractales</span></a>
+        </li>
+        <li>
+          <a href="popurri.html"><span><i class="icon-project"></i></span><span>Popurrí</span></a>
+        </li>
+      </ul>
+    </nav>
+    <main class="flex-row">
+      <article class="p-2">
+        <h6>Los Números</h6>
+        <div class="responsive2">
+          <input type="checkbox" name="group" id="show-nav" />
+          <label for="show-nav"><span>Los Números</span><i>&#8711;</i></label>
+          <ul class="show-menu">
+            <li><a href="numbers-patterns.html">Patrones sorprendentes</a></li>
+            <li><a href="numbers-1089.html">EL número 1089</a></li>
+            <li><a href="numbers-palindromo.html">Números palíndromos</a></li>
+            <li><a href="numbers-power.html">Relaciones de potencias</a></li>
+            <li><a href="multi-miss.html">Multiplicación</a></li>
+            <li><a href="multi-11.html">Multiplicación por 11</a></li>
+            <li><a href="multi-21.html">Multiplicación por 21, 31, 41,...</a></li>
+          </ul>
+        </div>
+        <h2>La belleza de los números</h2>
+        <section>
+          <h3>Introducción</h3>
+          <div>
+            <p>Estamos acostumbrados a ver números en las noticias del tiempo, de economía o simplemente en un ascensor.
+              Usamos números continuamente en nuestras experiencias de la vida diaria, ya sea para representar una
+              cantidad o
+              para designar algo como una calle, dirección o página. Usamos números sin tomarnos
+              el tiempo en observar algunas de sus inusuales propiedades. La inspección de algunas de estas inusuales
+              propiedades
+              numéricas nos proporciona una apreciación mucho más profunda de estos símbolos que con demasiada
+              frecuencia damos
+              por sentado.</p>
+            <p>A los estudiantes se les enseña matemáticas a menudo como un curso de instrucción seco y
+              obligatorio. Como profesores o divulgadores de esta ciencia, tenemos la obligación de hacerlo interesante.
+              Mostrar algunas de las rarezas numéricas aporta una nueva <q>vida</q> al tema.
+              Evocará en ellos una respuesta <q>¡impresionante!</q>. Eso es por lo que debemos esforzarnos. Hacer que
+              sientan curiosidad por el tema. Motivarlos a <q>indagar</q> más lejos.</p>
+            <p>Dado que esta web está destinada al disfrute de cualquier persona &#40;por supuesto, presentado
+              apropiadamente&#41;, las justificaciones o explicaciones serán simples y adecuadamente compresibles.
+              De la misma manera, en algunos casos la explicación puede llevar al lector a una investigación o
+              inspección
+              del fenómeno. En el momento en que usted pueda llegar al punto donde se pregunte por qué ocurrió la
+              propiedad
+              exhibida, usted ¡estará enganchado! Este es el objetivo de este apartado, para que usted quiera
+              maravillarse con los
+              resultados y cuestionarlos. Aunque las explicaciones puedan dejarle con algunas preguntas, estará bien en
+              hacer
+              algunas exploraciones individuales. Es durante estas investigaciones <q>privadas</q> que se produce un
+              aprendizaje genuino. ¡Anímese!</p>
+            <p>Por encima de todo, debemos tomar nota de la belleza de las relaciones numéricas. Sin más preámbulos,
+              vayamos al encantador reino de números y relaciones numéricas.</p>
+          </div>
+        </section>
+      </article>
+      <aside class="aside bgc-2 flex-column ai-center p-2">
+        <div class="secondary">
+          <ul class="accordion">
+            <li onclick="javascript:show('smenu1','img1');"><span>Belleza de los números</span><i id="img1"
+                style="transform:rotate(180deg);">&#8711;</i>
+              <ul class="d-block" id="smenu1">
+                <!-- <li><a href="introduction-1.html">Introducción</a></li> -->
+                <li><a href="numbers-patterns.html">Patrones sorprendentes</a></li>
+                <li><a href="numbers-1089.html">EL número 1089</a></li>
+                <li><a href="numbers-palindromo.html">Números palíndromos</a></li>
+                <li><a href="numbers-power.html">Relaciones de potencias</a></li>
+              </ul>
+            </li>
+            <li onclick="javascript:show('smenu2','img2');"><span>Maravillas aritméticas</span><i id="img2"
+                style="transform:rotate(0deg);">&#8711;</i>
+              <ul class="d-none" id="smenu2">
+                <!-- <li><a href="introduction-2.html">Introducción</a></li> -->
+                <li><a href="multi-miss.html">Multiplicación</a></li>
+                <li><a href="multi-11.html">Multiplicación por 11</a></li>
+                <li><a href="multi-21.html">Multiplicación por 21, 31, 41,...</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </main>
+    <footer class="footer bgc-1 flex-row wrap ac-strech color-2">
+      <section class="foot-nav f-grow1 pyx-12">
+        <h5 class="mb-1">Mapa web</h5>
+        <a href="index.html">Inicio</a>
+        <a href="numbers.html">Los números</a>
+        <a href="fractals.html">Fractales</a>
+        <a href="popurri.html">Popurrí</a>
+      </section>
+      <section class="foot-contact f-grow1 pyx-12">
+        <h5 class="mb-1">Contacto</h5>
+        <address class="flex-row">
+          <a href="https://www.linkedin.com/in/rguevaraponce/"><i class="icon-linkedin"></i></a>
+          <a href="http://richi071175@gmail.com"><i class="icon-envelop"></i></a>
+          <a href="https://github.com/santi-gp"><i class="icon-github"></i></a>
+        </address>
+      </section>
+      <section class="foot-copyright f-basis100 txt-center bgc-black f-grow1 px-2">
+        <h5 class="my-1">Copyright &copy;</h5>
+      </section>
+    </footer>
+  </div>
+</body>
+
+</html>

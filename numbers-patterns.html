@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Maravillas matemáticas" />
+  <meta name="keywords" content="HTML,CSS,JavaScript" />
+  <meta name="author" content="Ricardo" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="css/main.css" type="text/css" rel="stylesheet" />
+  <link href="css/styles.css" type="text/css" rel="stylesheet" />
+  <link href="css/responsive.css" type="text/css" rel="stylesheet" />
+  <link href="css/fonts.css" type="text/css" rel="stylesheet" />
+  <script src="js/nav-responsive.js"></script>
+  <script src="js/nav-accordion.js"></script>
+  <title>Matemáticas</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="bgc-1 flex-row jc-between ai-center">
+      <div class="logo-site px-2"><i class="icon-logo"></i></div>
+      <div class="name-site">
+        <h1>Maravillas</h1>
+        <h4>Matemáticas</h4>
+      </div>
+      <div class="nav-responsive px-2 txt-right"><i onclick="menu();" class="icon-bar"></i></div>
+    </header>
+    <nav id="nav" class="nav bgc-3">
+      <ul class="flex-row">
+        <li>
+          <a href="index.html"><span><i class="icon-home"></i></span><span>Inicio</span></a>
+        </li>
+        <li>
+          <a class="activated" href="numbers.html"><span><i class="icon-numerical"></i></span><span>Los
+              números</span></a>
+        </li>
+        <li>
+          <a href="fractals.html"><span><i class="icon-fractal"></i></span><span>Fractales</span></a>
+        </li>
+        <li>
+          <a href="popurri.html"><span><i class="icon-project"></i></span><span>Popurrí</span></a>
+        </li>
+      </ul>
+    </nav>
+    <main class="flex-row">
+      <article class="p-2">
+        <h6>Los Números / Patrones sorprendentes</h6>
+        <div class="responsive2">
+          <input type="checkbox" name="group" id="show-nav" />
+
+          <label for="show-nav"><span>Los Números</span><i>&#8711;</i></label>
+          <ul class="show-menu">
+            <li><a class="select" href="numbers-patterns.html">Patrones sorprendentes</a></li>
+            <li><a href="numbers-1089.html">EL número 1089</a></li>
+            <li><a href="numbers-palindromo.html">Números palíndromos</a></li>
+            <li><a href="numbers-power.html">Relaciones de potencias</a></li>
+            <li><a href="multi-miss.html">Multiplicación</a></li>
+            <li><a href="multi-11.html">Multiplicación por 11</a></li>
+            <li><a href="multi-21.html">Multiplicación por 21, 31, 41,...</a></li>
+          </ul>
+        </div>
+        <h2>Belleza de los números</h2>
+        <section>
+          <h3>Patrones sorprendentes de números</h3>
+          <div>
+            <p>Hay momentos en que el encanto de las matemáticas reside en la sorprendente naturaleza de
+              su sistema numérico. No hay muchas palabras necesarias para demostrar este encanto. Mire, disfrute y
+              difunde estas
+              increíbles propiedades. Permite que los demás aprecien la belleza de estos patrones y, si es posible,
+              trate de
+              buscar una <q>explicación</q> para esto. Lo más importante es que seamos capaces de apreciar esta belleza
+            </p>
+            <div class="patterns">
+              <div>1&times;1=1</div>
+              <div>11&times;11=121</div>
+              <div>111&times;111=12321</div>
+              <div>1111&times;1111=1234321</div>
+              <div>11111&times;11111=123454321</div>
+              <div>111111&times;111111=12345654321</div>
+              <div>1111111&times;1111111=1234567654321</div>
+              <div>11111111&times;11111111=123456787654321</div>
+              <div>111111111&times;111111111=12345678987654321</div>
+            </div>
+            <!-- <p>Observe (abajo) cómo varios productos de 76.923 producen números en el mismo orden pero con un punto de 
+   partida diferente. Aquí el primer dígito del producto va al final del número para formar el siguiente 
+   producto. De lo contrario, el orden de los dígitos está intacto.</p> -->
+            <p>Aquí hay algunos más encantadores de las matemáticas que dependen de la sorprendente naturaleza de su
+              sistema numérico. Una vez más, no se necesitan muchas palabras para demostrar el encanto, ya que es obvio
+              a primera vista. Simplemente mire, disfrute y comparta estas increíbles propiedades. Aprecie los patrones
+              y,
+              si es posible, trate de buscar una <q>explicación</q> a esto.</p>
+            <div class="patterns">
+              <div>12345679&times;&nbsp;9=111111111</div>
+              <div>12345679&times;18=222222222</div>
+              <div>12345679&times;27=333333333</div>
+              <div>12345679&times;36=444444444</div>
+              <div>12345679&times;45=555555555</div>
+              <div>12345679&times;54=666666666</div>
+              <div>12345679&times;63=777777777</div>
+              <div>12345679&times;72=888888888</div>
+              <div>12345679&times;81=999999999</div>
+          </div>
+          <p>En el siguiente gráfico de patrones, observe que el primer y último dígito de los productos son
+            los dígitos de los múltiplos de 9.</p>
+          <div class="patterns">
+            <div>987654321&times;&nbsp;9=08888888889</div>
+            <div>987654321&times;18=17777777778</div>
+            <div>987654321&times;27=26666666667</div>
+            <div>987654321&times;36=35555555556</div>
+            <div>987654321&times;45=44444444445</div>
+            <div>987654321&times;54=53333333334</div>
+            <div>987654321&times;63=62222222223</div>
+            <div>987654321&times;72=71111111112</div>
+            <div>987654321&times;81=80000000001</div>
+          </div>
+          <p>Es normal que ustedes deseen encontrar extensiones de este sorprendente patrón. Pueden
+            experimentar añadiendo dígitos al primer multiplicando o multiplicador por otros múltiplos de 9.
+            En cualquier caso, debe animarse la experimentación.</p>
+  </div>
+  </section>
+  </article>
+  <aside class="aside bgc-2 flex-column ai-center p-2">
+    <div class="secondary">
+      <ul class="accordion">
+        <li onclick="javascript:show('smenu1','img1');"><span>Belleza de los números</span><i id="img1"
+            style="transform:rotate(180deg);">&#8711;</i>
+          <ul class="flex-row" id="smenu1" style="display: block;">
+            <li><a class="select" href="numbers-patterns.html">Patrones sorprendentes</a></li>
+            <li><a href="numbers-1089.html">EL número 1089</a></li>
+            <li><a href="numbers-palindromo.html">Números palíndromos</a></li>
+            <li><a href="numbers-power.html">Relaciones de potencias</a></li>
+          </ul>
+        </li>
+        <li onclick="javascript:show('smenu2','img2');"><span>Maravillas aritméticas</span><i id="img2"
+            style="transform:rotate(0deg);">&#8711;</i>
+          <ul class="d-none" id="smenu2">
+
+            <li><a href="multi-miss.html">Multiplicación</a></li>
+            <li><a href="multi-11.html">Multiplicación por 11</a></li>
+            <li><a href="multi-21.html">Multiplicación por 21, 31, 41,...</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </aside>
+  </main>
+  <footer class="footer bgc-1 flex-row wrap ac-strech color-2">
+    <section class="foot-nav f-grow1 pyx-12">
+      <h5 class="mb-1">Mapa web</h5>
+      <a href="index.html">Inicio</a>
+      <a href="numbers.html">Los números</a>
+      <a href="fractals.html">Fractales</a>
+      <a href="popurri.html">Popurrí</a>
+    </section>
+    <section class="foot-contact f-grow1 pyx-12">
+      <h5 class="mb-1">Contacto</h5>
+      <address class="flex-row">
+        <a href="https://www.linkedin.com/in/rguevaraponce/"><i class="icon-linkedin"></i></a>
+        <a href="http://richi071175@gmail.com"><i class="icon-envelop"></i></a>
+        <a href="https://github.com/santi-gp"><i class="icon-github"></i></a>
+      </address>
+    </section>
+    <section class="foot-copyright f-basis100 txt-center bgc-black f-grow1 px-2">
+      <h5 class="my-1">Copyright &copy;</h5>
+    </section>
+  </footer>
+  </div>
+</body>
+
+</html>

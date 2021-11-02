@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Maravillas matemáticas" />
+  <meta name="keywords" content="HTML,CSS,JavaScript" />
+  <meta name="author" content="richi" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="css/main.css" type="text/css" rel="stylesheet" />
+  <link href="css/styles.css" type="text/css" rel="stylesheet" />
+  <link href="css/responsive.css" type="text/css" rel="stylesheet" />
+  <link href="css/fonts.css" type="text/css" rel="stylesheet" />
+  <script src="js/nav-responsive.js"></script>
+  <script src="js/nav-accordion.js"></script>
+  <title>Matemáticas</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="bgc-1 flex-row jc-between ai-center">
+      <div class="logo-site px-2"><i class="icon-logo"></i></div>
+      <div class="name-site">
+        <h1>Maravillas</h1>
+        <h4>Matemáticas</h4>
+      </div>
+      <div class="nav-responsive px-2 txt-right"><i onclick="menu();" class="icon-bar"></i></div>
+    </header>
+    <nav id="nav" class="nav bgc-3">
+      <ul class="flex-row">
+        <li>
+          <a href="index.html"><span><i class="icon-home"></i></span><span>Inicio</span></a>
+        </li>
+        <li>
+          <a href="numbers.html"><span><i class="icon-numerical"></i></span><span>Los números</span></a>
+        </li>
+        <li>
+          <a class="activated" href="fractals.html"><span><i class="icon-fractal"></i></span><span>Fractales</span></a>
+        </li>
+        <li>
+          <a href="popurri.html"><span><i class="icon-project"></i></span><span>Popurrí</span></a>
+        </li>
+      </ul>
+    </nav>
+    <main class="flex-row">
+      <article class="p-2">
+        <h6>Fractales / Conjunto de Cantor</h6>
+        <div class="responsive2">
+          <input type="checkbox" name="group" id="show-nav" />
+          <label for="show-nav"><span>Fractales</span><i>&#8711;</i></label>
+          <ul class="show-menu">
+            <li><a class="select" href="cantor-set.html">Conjunto de Cantor</a></li>
+            <li><a href="cantor-triangle.html">Triángulo de Cantor</a></li>
+            <li><a href="cantor-dust.html">Polvo de Cantor</a></li>
+            <li><a href="sierp-triangle.html">Triángulo de Sierpinski</a></li>
+            <li><a href="sierp-carpet.html">Alfombra de Sierpinski</a></li>
+            <li><a href="koch-curve.html">Curva de Koch</a></li>
+            <li><a href="koch-snow.html">Copo de Nieve</a></li>
+          </ul>
+        </div>
+        <h2>Conjunto de Cantor</h2>
+        <section>
+          <h3>Construcción</h3>
+          <div>
+            <ol>
+              <li>Comience con el intervalo cerrado <var>[0,1]</var>.
+                <figure class="flex-row jc-center py-2">
+                  <svg width="270" height="5">
+                    <defs>
+                      <polygon id="carpet1" points="0,0 270,0 270,5 0,5" fill="black" />
+                    </defs>
+                    <use xlink:href="#carpet1" />
+                  </svg>
+                </figure>
+              </li>
+              <li>Ahora retire el intervalo abierto <var>(1/3,2/3)</var>, es decir, retire el tercio medio de
+                <var>[0,1]</var>,
+                pero no los números <var>1/3</var> y <var>2/3</var>.
+              </li>
+              <li>Esto deja dos intervalos <var>[0, 1/3]</var> y <var>[2/3,1]</var> de longitud <var>1/3</var> cada
+                uno y esto completa una etapa de construcción básica.
+                <figure class="flex-row jc-center py-2">
+                  <svg width="270" height="5">
+                    <defs>
+                      <polygon id="cantor" points="0,0 270,0 270,5 0,5" fill="black" />
+                      <g id="Image1">
+                        <use xlink:href="#cantor" transform="translate(0,0) scale(0.3333,1)" />
+                        <use xlink:href="#cantor" transform="translate(180,0) scale(0.3333,1)" />
+                      </g>
+                    </defs>
+                    <use xlink:href="#Image1" />
+                  </svg>
+                </figure>
+              </li>
+              <li>Ahora repitamos, observamos los intervalos restantes <var>[0,1/3]</var> y <var>[2/3,1]</var>
+                y remueva sus tercios medios, lo que produce cuatro intervalos de longitud <var>1/9</var>.
+                <figure class="flex-row jc-center py-2">
+                  <svg width="270" height="5">
+                    <defs>
+                      <polygon id="cantor1" points="0,0 270,0 270,5 0,5" fill="black" />
+                      <g id="image1">
+                        <use xlink:href="#cantor1" transform="translate(0,0) scale(0.3333,1)" />
+                        <use xlink:href="#cantor1" transform="translate(180,0) scale(0.3333,1)" />
+                      </g>
+                      <g id="image2">
+                        <use xlink:href="#image1" transform="translate(0,0) scale(0.3333,1)" />
+                        <use xlink:href="#image1" transform="translate(180,0) scale(0.3333,1)" />
+                      </g>
+                    </defs>
+                    <use xlink:href="#image2" />
+                  </svg>
+                </figure>
+              </li>
+              <li>Continúe de esta manera. En otras palabras, hay un proceso de retroalimentación
+                en el que se genera una secuencia de intervalos cerrados.</li>
+            </ol>
+          </div>
+        </section>
+        <section>
+          <input type="checkbox" name="group" id="option-2" />
+          <h3><label for="option-2">Longitud total del conjunto Cantor</label></h3>
+          <div class="hidden">
+            <p>Esto es fácil de mostrar: en el paso uno, la longitud total es 1. En el paso 2 es 1/3+1/3 = 2/3.
+              Así, en la etapa 3, la longitud es <var>(2/3)<sup>2</sup></var>, y en la etapa <var>n</var> es
+              <var>(2/3)<sup>n</sup></var>. Cuando <var>n &rarr; &infin;</var> esto tiende
+              a cero. Por lo tanto, la longitud acumulativa total del conjunto de Cantor es cero.
+            </p>
+          </div>
+        </section>
+        <section>
+          <input type="checkbox" name="group" id="option-3" />
+          <h3><label for="option-3">Número de intervalos</label></h3>
+          <div class="hidden">
+            <p>En el primer paso de la construcción básica tenemos un intervalo, dos después del segundo paso, cuatro
+              después
+              del tercer paso, ocho después del cuarto paso, etc. Es decir, <var>2<sup>n</sup></var> intervalos
+              de longitud <var>1/3<sup>n</sup></var> después del enésimo paso.</p>
+          </div>
+        </section>
+      </article>
+      <aside class="aside bgc-2 flex-column ai-center p-2">
+        <div class="secondary">
+          <ul class="accordion">
+            <li onclick="javascript:show('smenu1','img1');"><span>Cantor</span><i id="img1"
+                style="transform:rotate(180deg);">&#8711;</i>
+              <ul class="flex-row" id="smenu1" style="display: block;">
+                <li><a class="select" href="cantor-set.html">Conjunto de Cantor</a></li>
+                <li><a href="cantor-triangle.html">Triángulo de Cantor</a></li>
+                <li><a href="cantor-dust.html">Polvo de Cantor</a></li>
+              </ul>
+            </li>
+            <li onclick="javascript:show('smenu2','img2');"><span>Sierpinski</span><i id="img2"
+                style="transform:rotate(0deg);">&#8711;</i>
+              <ul class="d-none" id="smenu2">
+                <li><a href="sierp-triangle.html">Triángulo de Sierpinski</a></li>
+                <li><a href="sierp-carpet.html">Alfombra de Sierpinski</a></li>
+              </ul>
+            </li>
+            <li onclick="javascript:show('smenu3','img3');"><span>Von Koch</span><i id="img3"
+                style="transform:rotate(0deg);">&#8711;</i>
+              <ul class="flex-row" id="smenu3" style="display: none;">
+                <li><a href="koch-curve.html">Curva de Koch</a></li>
+                <li><a href="koch-snow.html">Copo de Nieve</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="secondary">
+          <p>La siguiente figura muestra las 5 primeras iteraciones de la construcción del conjunto de Cantor.</p>
+          <figure class="flex-row jc-center py-2">
+            <svg width="270" height="75">
+              <defs>
+                <polygon id="fig1" points="0,0 270,0 270,5 0,5" fill="black" />
+                <g id="imgS1">
+                  <use xlink:href="#fig1" transform="translate(0,15) scale(0.3333,1)" />
+                  <use xlink:href="#fig1" transform="translate(180,15) scale(0.3333,1)" />
+                </g>
+                <g id="imgS2">
+                  <use xlink:href="#imgS1" transform="translate(0,15) scale(0.3333,1)" />
+                  <use xlink:href="#imgS1" transform="translate(180,15) scale(0.3333,1)" />
+                </g>
+                <g id="imgS3">
+                  <use xlink:href="#imgS2" transform="translate(0,15) scale(0.3333,1)" />
+                  <use xlink:href="#imgS2" transform="translate(180,15) scale(0.3333,1)" />
+                </g>
+                <g id="imgS4">
+                  <use xlink:href="#imgS3" transform="translate(0,15) scale(0.3333,1)" />
+                  <use xlink:href="#imgS3" transform="translate(180,15) scale(0.3333,1)" />
+                </g>
+              </defs>
+              <use xlink:href="#fig1" />
+              <use xlink:href="#imgS2" />
+              <use xlink:href="#imgS1" />
+              <use xlink:href="#imgS3" />
+              <use xlink:href="#imgS4" />
+            </svg>
+          </figure>
+        </div>
+      </aside>
+    </main>
+    <footer class="footer bgc-1 flex-row wrap ac-strech color-2">
+      <section class="foot-nav f-grow1 pyx-12">
+        <h5 class="mb-1">Mapa web</h5>
+        <a href="index.html">Inicio</a>
+        <a href="numbers.html">Los números</a>
+        <a href="fractals.html">Fractales</a>
+        <a href="popurri.html">Popurrí</a>
+      </section>
+      <section class="foot-contact f-grow1 pyx-12">
+        <h5 class="mb-1">Contacto</h5>
+        <address class="flex-row">
+          <a href="https://www.linkedin.com/in/rguevaraponce/"><i class="icon-linkedin"></i></a>
+          <a href="http://richi071175@gmail.com"><i class="icon-envelop"></i></a>
+          <a href="https://github.com/santi-gp"><i class="icon-github"></i></a>
+        </address>
+      </section>
+      <section class="foot-copyright f-basis100 txt-center bgc-black f-grow1 px-2">
+        <h5 class="my-1">Copyright &copy;</h5>
+      </section>
+    </footer>
+  </div>
+</body>
+
+</html>

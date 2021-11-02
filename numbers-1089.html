@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Maravillas matemáticas" />
+  <meta name="keywords" content="HTML,CSS,JavaScript" />
+  <meta name="author" content="Ricardo" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="css/main.css" type="text/css" rel="stylesheet" />
+  <link href="css/styles.css" type="text/css" rel="stylesheet" />
+  <link href="css/responsive.css" type="text/css" rel="stylesheet" />
+  <link href="css/fonts.css" type="text/css" rel="stylesheet" />
+  <script src="js/nav-responsive.js"></script>
+  <script src="js/nav-accordion.js"></script>
+  <title>Matemáticas</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="bgc-1 flex-row jc-between ai-center">
+      <div class="logo-site px-2"><i class="icon-logo"></i></div>
+      <div class="name-site">
+        <h1>Maravillas</h1>
+        <h4>Matemáticas</h4>
+      </div>
+      <div class="nav-responsive px-2 txt-right"><i onclick="menu();" class="icon-bar"></i></div>
+    </header>
+    <nav id="nav" class="nav bgc-3">
+      <ul class="flex-row">
+        <li>
+          <a href="index.html"><span><i class="icon-home"></i></span><span>Inicio</span></a>
+        </li>
+        <li>
+          <a class="activated" href="numbers.html"><span><i class="icon-numerical"></i></span><span>Los
+              números</span></a>
+        </li>
+        <li>
+          <a href="fractals.html"><span><i class="icon-fractal"></i></span><span>Fractales</span></a>
+        </li>
+        <li>
+          <a href="popurri.html"><span><i class="icon-project"></i></span><span>Popurrí</span></a>
+        </li>
+      </ul>
+    </nav>
+    <main class="flex-row">
+      <article class="p-2">
+        <h6>Los Números / El espectacular número 1089</h6>
+        <div class="responsive2">
+          <input type="checkbox" name="group" id="show-nav" />
+          <label for="show-nav"><span>Los Números</span><i>&#8711;</i></label>
+          <ul class="show-menu">
+            <li><a href="numbers-patterns.html">Patrones sorprendentes</a></li>
+            <li><a class="select" href="numbers-1089.html">EL número 1089</a></li>
+            <li><a href="numbers-palindromo.html">Números palíndromos</a></li>
+            <li><a href="numbers-power.html">Relaciones de potencias</a></li>
+            <li><a href="multi-miss.html">Multiplicación</a></li>
+            <li><a href="multi-11.html">Multiplicación por 11</a></li>
+            <li><a href="multi-21.html">Multiplicación por 21, 31, 41,...</a></li>
+          </ul>
+        </div>
+        <h2>Belleza de los números</h2>
+        <section>
+          <h3>El espectacular número 1089</h3>
+          <div>
+            <p>Este apartado habla sobre un número que tiene algunas propiedades verdaderamente excepcionales.
+              Seleccione un número de tres dígitos (donde las unidades y los dígitos de las centenas no son
+              los mismos) y siga estas instrucciones:</p>
+            <ol>
+              <li>Elija cualquier número de tres dígitos (donde las unidades y los dígitos de los centenares no son los
+                mismos).<br />
+                <strong>Lo haremos con usted aquí seleccionando arbitrariamente 825.</strong>
+              </li>
+              <li>Invertir los dígitos de este número que ha seleccionado.<br />
+                <strong>Continuaremos aquí invirtiendo los dígitos de 825 para obtener 528.</strong>
+              </li>
+              <li>Restar los dos números (naturalmente, el más grande menos el más pequeño).<br />
+                <strong>Nuestra diferencia calculada es 825 - 528 = 297.</strong>
+              </li>
+              <li> Una vez más, invierta los dígitos de esta diferencia.<br />
+                <strong>Invirtiendo los dígitos de 297 obtenemos el número 792.</strong>
+              </li>
+              <li>Ahora, sumar los dos últimos números.<br />
+                <strong>A continuación, sumamos los dos últimos números para obtener 297 + 792 = 1089.</strong>
+              </li>
+            </ol>
+            <p>Su resultado debe ser el mismo que el nuestro, aunque sus números de partida sean diferentes
+              de los nuestros.</p>
+            <p>Veamos una propiedad adicional de este encantador número. Por ejemplo, los primeros nueve múltiplos de
+              1089:
+            </p>
+            <div class="equation">
+              1089 &times; 1 = 1089<br />
+              1089 &times; 2 = 2178<br />
+              1089 &times; 3 = 3267<br />
+              1089 &times; 4 = 4356<br />
+              1089 &times; 5 = 5445<br />
+              1089 &times; 6 = 6534<br />
+              1089 &times; 7 = 6723<br />
+              1089 &times; 8 = 8712<br />
+              1089 &times; 9 = 9801
+            </div>
+            <p>¿Se nota un patrón entre los productos? Mire los productos primero y noveno. Son los reveses
+              del otro. El segundo y el octavo también son reversos entre sí. Y así el patrón continúa,
+              hasta que el quinto producto es el reverso de sí mismo, conocido como un número palíndromo.</p>
+            <p>Note, en particular, que 1089 - 9 = 9801, que es la inversión del número original.
+              La misma propiedad es válida para 10989 - 9 = 98901, y similarmente, 109989 - 9 = 989901.
+              Los estudiantes serán rápidos en ofrecer extensiones a esto. Sus estudiantes deben reconocer
+              ahora que hemos alterado el original 1089 insertando un 9 en el medio del número, y extendido
+              que insertando 99 en el medio de los 1089. Sería bueno concluir de esto que cada uno de los
+              siguientes números tienen la misma propiedad: 1099 989, 10 999 989, 109 999 989,
+              1 099 999 989, 10 999 999 989, y así sucesivamente.</p>
+          </div>
+        </section>
+      </article>
+      <aside class="aside bgc-2 flex-column ai-center p-2">
+        <div class="secondary">
+          <ul class="accordion">
+            <li onclick="javascript:show('smenu1','img1');"><span>Belleza de los números</span><i id="img1"
+                style="transform:rotate(180deg);">&#8711;</i>
+              <ul class="flex-row" id="smenu1" style="display: block;">
+
+                <li><a href="numbers-patterns.html">Patrones sorprendentes</a></li>
+                <li><a class="select" href="numbers-1089.html">EL número 1089</a></li>
+                <li><a href="numbers-palindromo.html">Números palíndromos</a></li>
+                <li><a href="numbers-power.html">Relaciones de potencias</a></li>
+              </ul>
+            </li>
+            <li onclick="javascript:show('smenu2','img2');"><span>Maravillas aritméticas</span><i id="img2"
+                style="transform:rotate(0deg);">&#8711;</i>
+              <ul class="d-none" id="smenu2">
+
+                <li><a href="multi-miss.html">Multiplicación</a></li>
+                <li><a href="multi-11.html">Multiplicación por 11</a></li>
+                <li><a href="multi-21.html">Multiplicación por 21, 31, 41,...</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </main>
+    <footer class="footer bgc-1 flex-row wrap ac-strech color-2">
+      <section class="foot-nav f-grow1 pyx-12">
+        <h5 class="mb-1">Mapa web</h5>
+        <a href="index.html">Inicio</a>
+        <a href="numbers.html">Los números</a>
+        <a href="fractals.html">Fractales</a>
+        <a href="popurri.html">Popurrí</a>
+      </section>
+      <section class="foot-contact f-grow1 pyx-12">
+        <h5 class="mb-1">Contacto</h5>
+        <address class="flex-row">
+          <a href="https://www.linkedin.com/in/rguevaraponce/"><i class="icon-linkedin"></i></a>
+          <a href="http://richi071175@gmail.com"><i class="icon-envelop"></i></a>
+          <a href="https://github.com/santi-gp"><i class="icon-github"></i></a>
+        </address>
+      </section>
+      <section class="foot-copyright f-basis100 txt-center bgc-black f-grow1 px-2">
+        <h5 class="my-1">Copyright &copy;</h5>
+      </section>
+    </footer>
+  </div>
+</body>
+
+</html>

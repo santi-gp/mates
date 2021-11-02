@@ -1,0 +1,194 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/* Background colors */
+.bgc-1{
+	background-color:#3c3e42;
+}
+.bgc-2{
+	background-color:#e9ebe4;
+}
+.bgc-3{
+	background-color:#616161;
+}
+.bgc-black{
+	background-color:#000;
+}
+.bgc-white{
+	background-color:#fff;
+}
+/* texts colors */
+.color-1{
+	color:#5d5f63;
+}
+.color-2{
+	color:#f6db7f;
+}
+.color-3{
+	color:#22af70;
+}
+.color-black{
+	color:#000f;
+}
+.color-white{
+	color: #fff;
+}
+/* Align texts */
+.txt-center{
+	text-align: center;
+}
+.txt-left{
+	text-align: left;
+}
+.txt-right{
+	text-align: right;
+}
+.txt-justify{
+	text-align: justify;
+}
+/* Flex styles */ 
+.flex-row{
+	display: flex;
+}
+.flex-column{
+	display: flex;
+	flex-direction: column;
+}
+.no-wrap{
+	flex-wrap: nowrap;
+}
+.wrap{
+	flex-wrap: wrap;
+}
+.f-basis50{
+	flex-basis: 50%;
+}
+.f-basis100{
+	flex-basis: 100%;
+}
+.f-grow1{
+	flex-grow: 1;
+}
+.f-grow2{
+	flex-grow: 2;
+}
+.f-grow3{
+	flex-grow: 3;
+}
+/* Alienación Horizontal */
+.jc-start{
+	justify-content: flex-start;
+}
+.jc-end{
+	justify-content: flex-end;
+}
+.jc-center{
+	justify-content: center;
+}
+.jc-around{
+	justify-content: space-around;
+}
+.jc-between{
+	justify-content: space-between;
+}
+.jc-strech{
+	justify-content: stretch;
+}
+/* Alineación Vertical*/
+.ai-start{
+	align-items: flex-start;
+}
+.ai-end{
+	align-items: flex-end;
+}
+.ai-center{
+	align-items: center;
+}
+ai-strech{
+	align-items: stretch;
+}
+.ac-strech{
+	align-content: stretch;
+}
+/* Margins */
+.m-0{
+	margin: 0;
+}
+.m-1{
+	margin: 1%;
+}
+.mt-1{
+	margin-top: 1%;
+}
+.mb-1{
+	margin-bottom: 1%;
+}
+.mx-1{
+	margin: 0 1%;
+}
+.my-1{
+	margin: 1% 0;
+}
+.m-2{
+	margin: 2%;
+}
+.mt-2{
+	margin-top: 2%;
+}
+.mb-2{
+	margin-bottom: 2% 0;
+}
+.mx-2{
+	margin: 0 2%;
+}
+.my-2{
+	margin: 2% 0;
+}
+/* Paddongs */
+.p-0{
+	padding: 0;
+}
+.p-1{
+	padding: 1%;
+}
+.pt-1{
+	padding-top: 1%;
+}
+.pb-1{
+	padding-bottom: 1%;
+}
+.px-1{
+	padding: 0 1%;
+}
+.py-1{
+	padding: 1% 0;
+}
+.p-2{
+	padding: 2%;
+}
+.pt-2{
+	padding-top: 2%;
+}
+.pb-2{
+	padding-bottom: 2%;
+}
+.px-2{
+	padding: 0 2%;
+}
+.py-2{
+	padding: 2% 0;
+}
+.pyx-12{
+    padding: 1% 2%;
+}
+.pyx-21{
+    padding: 2% 1%;
+}
+/* Display*/
+.d-none{
+	display: none;
+}
+.d-block{
+	display: block;
+}

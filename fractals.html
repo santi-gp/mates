@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Maravillas matemáticas" />
+  <meta name="keywords" content="HTML,CSS,JavaScript" />
+  <meta name="author" content="Ricardo" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="css/main.css" type="text/css" rel="stylesheet" />
+  <link href="css/styles.css" type="text/css" rel="stylesheet" />
+  <link href="css/responsive.css" type="text/css" rel="stylesheet" />
+  <link href="css/fonts.css" type="text/css" rel="stylesheet" />
+  <script src="js/nav-responsive.js"></script>
+  <script src="js/nav-accordion.js"></script>
+  <title>Matemáticas</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="bgc-1 flex-row jc-between ai-center">
+      <div class="logo-site px-2"><i class="icon-logo"></i></div>
+      <div class="name-site">
+        <h1>Maravillas</h1>
+        <h4>Matemáticas</h4>
+      </div>
+      <div class="nav-responsive px-2 txt-right"><i onclick="menu();" class="icon-bar"></i></div>
+    </header>
+    <nav id="nav" class="nav bgc-3">
+      <ul class="flex-row">
+        <li>
+          <a href="index.html"><span><i class="icon-home"></i></span><span>Inicio</span></a>
+        </li>
+        <li>
+          <a href="numbers.html"><span><i class="icon-numerical"></i></span><span>Los números</span></a>
+        </li>
+        <li>
+          <a class="activated" href="fractals.html"><span><i class="icon-fractal"></i></span><span>Fractales</span></a>
+        </li>
+        <li>
+          <a href="popurri.html"><span><i class="icon-project"></i></span><span>Popurrí</span></a>
+        </li>
+      </ul>
+    </nav>
+    <main class="flex-row">
+      <article class="p-2">
+        <h6>Fractales</h6>
+        <div class="responsive2">
+          <input type="checkbox" name="group" id="show-nav" />
+          <label for="show-nav"><span>Fractales</span><i>&#8711;</i></label>
+          <ul class="show-menu">
+            <li><a href="cantor-set.html">Conjunto de Cantor</a></li>
+            <li><a href="cantor-triangle.html">Triángulo de Cantor</a></li>
+            <li><a href="cantor-dust.html">Polvo de Cantor</a></li>
+            <li><a href="sierp-triangle.html">Triángulo de Sierpinski</a></li>
+            <li><a href="sierp-carpet.html">Alfombra de Sierpinski</a></li>
+            <li><a href="koch-curve.html">Curva de Koch</a></li>
+            <li><a href="koch-snow.html">Copo de Nieve</a></li>
+          </ul>
+        </div>
+        <h2>Fractales Lineales</h2>
+        <section>
+          <h3>Introducción</h3>
+          <div>
+            <p>Este trabajo es una propuesta para introducir los conceptos y procedimientos básicos de la Geometría
+              Fractal. La Geometría Fractal es un área de investigación muy reciente de las matemáticas,
+              cuyo desarrollo se ha visto acelerado gracias a sus inmensas aplicaciones en diferentes campos de
+              la ciencia y la tecnología y al desarrollo de los computadores. Esta geometría, estudia figuras altamente
+              irregulares
+              generadas a través de procesos recursivos y tienen como característica fundamental la auto-similitud
+              y la dimensión no entera. Lo primero significa que poseen alguna propiedad invariante bajo el cambio de
+              escala. Por ejemplo, a veces la rama de un árbol está compuesta por pequeñas ramas que tienen una
+              forma muy parecida a la totalidad de la rama. Lo segundo significa que no posee las dimensiones
+              usuales: uno, la de la línea; dos, la del plano y tres, la del espacio. Es decir, son figuras que
+              pueden habitar en espacios intermedios. Por ejemplo, encontrarse en el plano y en el espacio. En este
+              trabajo solo trataremos con el plano.</p>
+            <p>Los primeros fractales lineales que se conocen datan de finales del siglo XIX, mucho antes de que
+              se hubiera definido formalmente lo que era un fractal. Estos conjuntos eran considerados
+              <q>monstruos matemáticos</q>, por tener características que los matemáticos de entonces no podían
+              explicarse.
+            </p>
+            <p>El trabajo aborda, por espacio, solo la construcción de 3 fractales clásicos: los conjuntos de Cantor,
+              de Sierpinski y de Koch. La construcción de estos fractales se hace por medio de un método estático y
+              se fundamenta en un proceso recursivo y podrían ampliarse al resto de fractales clásicos.</p>
+          </div>
+        </section>
+        <section>
+          <h6>&nbsp;</h6>
+          <figure class="flex-column ai-center">
+            <img src="img/dragon.png" width="270" height="181" alt="curve-dragon" />
+            <figcaption class="p-2">Fractal la curva del dragón.</figcaption>
+          </figure>
+        </section>
+      </article>
+      <aside class="aside bgc-2 flex-column ai-center p-2">
+        <div class="secondary">
+          <ul class="accordion">
+            <li onclick="javascript:show('smenu1','img1');"><span>Cantor</span><i id="img1"
+                style="transform:rotate(0deg);">&#8711;</i>
+              <ul class="d-block" id="smenu1">
+                <li><a href="cantor-set.html">Conjunto de Cantor</a></li>
+                <li><a href="cantor-triangle.html">Triángulo de Cantor</a></li>
+                <li><a href="cantor-dust.html">Polvo de Cantor</a></li>
+              </ul>
+            </li>
+            <li onclick="javascript:show('smenu2','img2');"><span>Sierpinski</span><i id="img2"
+                style="transform:rotate(0deg);">&#8711;</i>
+              <ul class="d-none" id="smenu2">
+               <li><a href="sierp-triangle.html">Triángulo de Sierpinski</a></li>
+                <li><a href="sierp-carpet.html">Alfombra de Sierpinski</a></li>
+              </ul>
+            </li>
+            <li onclick="javascript:show('smenu3','img3');"><span>Von Koch</span><i id="img3"
+                style="transform:rotate(0deg);">&#8711;</i>
+              <ul class="flex-row" id="smenu3" style="display: none;">
+               <li><a href="koch-curve.html">Curva de Koch</a></li>
+                <li><a href="koch-snow.html">Copo de Nieve</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="secondary">
+          <h4>Beno&#238;t Mandelbrot</h4>
+          <blockquote cite="https://es.wikipedia.org/wiki/Beno%C3%AEt_Mandelbrot">
+            <p>Beno&#238;t Mandelbrot (Varsovia, Polonia, 20 de noviembre de 1924 - Cambridge, Estados Unidos, 14 de
+              octubre de 2010)​ fue un
+              matemático polaco nacionalizado francés y estadounidense conocido por sus trabajos sobre los fractales. Es
+              considerado
+              el principal responsable del auge de este campo de las matemáticas desde el inicio de los años setenta,
+              así como de
+              su popularidad al utilizar la herramienta que se estaba popularizando en ésta época - el ordenador - para
+              trazar los
+              más conocidos ejemplos de geometría fractal: el conjunto de Mandelbrot y los conjuntos de Julia. Gaston
+              Julia
+              descubrió estos últimos y desarrolló las matemáticas de los fractales, que luego desarrolló Mandelbrot.
+            </p>
+          </blockquote>
+        </div>
+        <div id="secondary">
+          <figure>
+            <img src="img/mandel.png" width="250" height="190" alt="mandelbrot" />
+            <figcaption>El famoso conjunto de Mandelbrot</figcaption>
+          </figure>
+        </div>
+      </aside>
+    </main>
+    <footer class="footer bgc-1 flex-row wrap ac-strech color-2">
+      <section class="foot-nav f-grow1 pyx-12">
+        <h5 class="mb-1">Mapa web</h5>
+        <a href="index.html">Inicio</a>
+        <a href="numbers.html">Los números</a>
+        <a href="fractals.html">Fractales</a>
+        <a href="popurri.html">Popurrí</a>
+      </section>
+      <section class="foot-contact f-grow1 pyx-12">
+        <h5 class="mb-1">Contacto</h5>
+        <address class="flex-row">
+          <a href="https://www.linkedin.com/in/rguevaraponce/"><i class="icon-linkedin"></i></a>
+          <a href="http://richi071175@gmail.com"><i class="icon-envelop"></i></a>
+          <a href="https://github.com/santi-gp"><i class="icon-github"></i></a>
+        </address>
+      </section>
+      <section class="foot-copyright f-basis100 txt-center bgc-black f-grow1 px-2">
+        <h5 class="my-1">Copyright &copy;</h5>
+      </section>
+    </footer>
+  </div>
+</body>
+
+</html>

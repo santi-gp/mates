@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Maravillas matemáticas" />
+  <meta name="keywords" content="HTML,CSS,JavaScript" />
+  <meta name="author" content="Ricardo" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="css/main.css" type="text/css" rel="stylesheet" />
+  <link href="css/styles.css" type="text/css" rel="stylesheet" />
+  <link href="css/responsive.css" type="text/css" rel="stylesheet" />
+  <link href="css/fonts.css" type="text/css" rel="stylesheet" />
+  <script src="js/nav-responsive.js"></script>
+  <script src="js/nav-accordion.js"></script>
+  <title>Matemáticas</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="bgc-1 flex-row jc-between ai-center">
+      <div class="logo-site px-2"><i class="icon-logo"></i></div>
+      <div class="name-site">
+        <h1>Maravillas</h1>
+        <h4>Matemáticas</h4>
+      </div>
+      <div class="nav-responsive px-2 txt-right"><i onclick="menu();" class="icon-bar"></i></div>
+    </header>
+    <nav id="nav" class="nav bgc-3">
+      <ul class="flex-row">
+        <li>
+          <a href="index.html"><span><i class="icon-home"></i></span><span>Inicio</span></a>
+        </li>
+        <li>
+          <a class="activated" href="numbers.html"><span><i class="icon-numerical"></i></span><span>Los
+              números</span></a>
+        </li>
+        <li>
+          <a href="fractals.html"><span><i class="icon-fractal"></i></span><span>Fractales</span></a>
+        </li>
+        <li>
+          <a href="popurri.html"><span><i class="icon-project"></i></span><span>Popurrí</span></a>
+        </li>
+      </ul>
+    </nav>
+    <main class="flex-row">
+      <article class="p-2">
+        <h6>Los Números / Multiplicaciones rápidas</h6>
+        <div class="responsive2">
+          <input type="checkbox" name="group" id="show-nav" />
+          <label for="show-nav"><span>Los Números</span><i>&#8711;</i></label>
+          <ul class="show-menu">
+            <li><a href="numbers-patterns.html">Patrones sorprendentes</a></li>
+            <li><a href="numbers-1089.html">EL número 1089</a></li>
+            <li><a href="numbers-palindromo.html">Números palíndromos</a></li>
+            <li><a href="numbers-power.html">Relaciones de potencias</a></li>
+            <li><a class="select" href="multi-miss.html">Multiplicación</a></li>
+            <li><a href="multi-11.html">Multiplicación por 11</a></li>
+            <li><a href="multi-21.html">Multiplicación por 21, 31, 41,...</a></li>
+          </ul>
+        </div>
+        <h2>Multiplicaciones rápidas</h2>
+        <section>
+          <h3>Multiplicación de números por debajo de 100</h3>
+          <div>
+            <p>Supongamos que queremos realizar la siguiente multiplicación:</p>
+            <div class="flex-row jc-center">
+              <div class="multi1">
+                <span class="img1">
+                  &nbsp;
+                </span>
+                <span class="img2">
+                  96
+                </span>
+                <span class="img3">
+                  &times;
+                </span>
+                <span class="img4">
+                  97
+                </span>
+                <span class="img5">
+                </span>
+              </div>
+            </div>
+            <p>¿Cuánto falta para que ambos multiplicandos hagan 100?, por lo que escribimos 4 por debajo de 96 y 3 por
+              debajo de 97.</p>
+            <div class="equation">
+              <div class="multi3">
+                <span class="img1">96</span>
+                <span class="img2">&times;</span>
+                <span class="img3">97</span>
+                <span class="img4">=</span>
+                <span class="img6 circle txt-center">4</span>
+                <span class="img7"></span>
+                <span class="img8 circle txt-center">3</span>
+                <span class="img9"></span>
+              </div>
+            </div>
+            <p>¿Qué hacemos ahora? Tomamos diferencia cruzada: 96 menos 3 o 97 menos 4 es igual a 93. Escriba eso como
+              la primera parte de la respuesta.</p>
+            <div class="equation">
+
+              <div class="multi3">
+                <span class="img1">96</span>
+                <span class="img2">&times;</span>
+                <span class="img3">97</span>
+                <span class="img4">=93</span>
+                <span class="img6 circle txt-center">4</span>
+                <span class="img7"></span>
+                <span class="img8 circle txt-center">3</span>
+                <span class="img9"></span>
+              </div>
+
+            </div>
+            <p>¿Qué hacemos a continuación? Multiplique los números en los círculos: 4 por 3 equivale a 12. Anote esto
+              para la última parte de la respuesta. La respuesta completa es 9312.</p>
+            <div class="equation">
+
+              <div class="multi3">
+                <span class="img1">96</span>
+                <span class="img2">&times;</span>
+                <span class="img3">97</span>
+                <span class="img4">=9312</span>
+                <span class="img6 circle txt-center">4</span>
+                <span class="img7"></span>
+                <span class="img8 circle txt-center">3</span>
+                <span class="img9"></span>
+              </div>
+
+            </div>
+            <p>¿Qué método crees que es más fácil, este método o el que aprendiste en la escuela? Definitivamente creo
+              que este método; ¿No estás de acuerdo?</p>
+          </div>
+        </section>
+        <section>
+          <input type="checkbox" name="group" id="option-2" />
+          <h3><label for="option-2">Número al cuadrado</label></h3>
+          <div class="hidden">
+            <p>Como usted probablemente sabe, el cuadrado de un número es un número multiplicado por sí mismo. Por
+              ejemplo,
+              el cuadrado de 7 es 7 &times; 7 = 49. Este método es especialmente simple
+              cuando el número termina en 5, así que vamos a hacer ese truco ahora.</p>
+            <p>Para determinar el cuadrado de un número de dos dígitos que termina en 5, solo necesita recordar dos
+              cosas:</p>
+            <ol>
+              <li>La respuesta comienza multiplicando el primer dígito por el siguiente dígito más alto.</li>
+              <li>La respuesta termina en 25.</li>
+            </ol>
+            <p>Por ejemplo, para obtener el cuadrado del número 35, simplemente multiplicamos el primer dígito 3 por
+              el siguiente dígito superior 4, luego adjuntamos 25. Como 3 &times; 4 = 12, la respuesta es 1225. Por lo
+              tanto,</p>
+            <div class="flex-row jc-center">
+              <div class="multi2">
+                <span class="img1">
+                  &nbsp;
+                </span>
+                <span class="img2">
+                  35
+                </span>
+                <span class="img3">
+                  &times;
+                </span>
+                <span class="img4">
+                  35
+                </span>
+                <span class="img5">
+                </span>
+                <span class="img6">
+                  1225
+                </span>
+              </div>
+            </div>
+            <p>Nuestros pasos pueden ilustrarse de esta manera:</p>
+            <div class="flex-row jc-center">
+              <div class="multi4">
+                <span class="img1">&nbsp;</span>
+                <span class="img1">&nbsp;</span>
+                <span class="img2">35</span>
+                <span class="img15">&nbsp;</span>
+                <span class="img3">&times;</span>
+                <span class="img4">35</span>
+                <span class="img5"></span>
+                <span class="img6"><i class="circle">3</i>&times;<i class="circle">4</i>&#61;</span>
+                <span class="img7">12</span>
+                <span class="img8">&nbsp;</span>
+                <span class="img9"><i class="circle">5</i>&times;<i class="circle">5</i>&#61;</span>
+                <span class="img10">&nbsp;</span>
+                <span class="img11">25</span>
+                <span class="img16"></span>
+                <span class="img12 txt-right">&#61;</span>
+                <span class="img13">12</span>
+                <span class="img14">25</span>
+              </div>
+            </div>
+            <p>Podemos usar un truco similar al multiplicar números de dos dígitos con el mismo primer dígito y los
+              segundos
+              dígitos que suman a 10. La respuesta comienza de la misma manera que lo hizo antes (el primer dígito
+              multiplicado
+              por el siguiente dígito más alto), seguido por el producto de los segundos dígitos. Por ejemplo,
+              multipliquemos</p>
+            <div class="flex-row jc-center">
+              <div class="multi1">
+                <span class="img1">
+                  &nbsp;
+                </span>
+                <span class="img2">
+                  83
+                </span>
+                <span class="img3">
+                  &times;
+                </span>
+                <span class="img4">
+                  87
+                </span>
+                <span class="img5">
+                </span>
+              </div>
+            </div>
+            <p>Los dos números comienzan con 8 y los últimos dígitos suman a 3 + 7 = 10. Puesto que 8 &times; 9 = 72 y 3
+              &times;
+              7 = 21, la respuesta es 7221.</p>
+            <div class="flex-row jc-center">
+              <div class="multi4">
+                <span class="img1">&nbsp;</span>
+                <span class="img1">&nbsp;</span>
+                <span class="img2">83</span>
+                <span class="img15">&nbsp;</span>
+                <span class="img3">&times;</span>
+                <span class="img4">87</span>
+                <span class="img5"></span>
+                <span class="img6"><i class="circle">8</i>&times;<i class="circle">9</i>&#61;</span>
+                <span class="img7">72</span>
+                <span class="img8">&nbsp;</span>
+                <span class="img9"><i class="circle">3</i>&times;<i class="circle">7</i>&#61;</span>
+                <span class="img10">&nbsp;</span>
+                <span class="img11">21</span>
+                <span class="img16"></span>
+                <span class="img12 txt-right">&#61;</span>
+                <span class="img13">72</span>
+                <span class="img14">21</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+      <aside class="aside bgc-2 flex-column ai-center p-2">
+        <div class="secondary">
+          <ul class="accordion">
+            <li onclick="javascript:show('smenu1','img1');"><span>Belleza de los números</span><i id="img1"
+                style="transform:rotate(0deg);">&#8711;</i>
+              <ul class="d-none" id="smenu1">
+
+                <li><a href="numbers-patterns.html">Patrones sorprendentes</a></li>
+                <li><a href="numbers-1089.html">EL número 1089</a></li>
+                <li><a href="numbers-palindromo.html">Números palíndromos</a></li>
+                <li><a href="numbers-power.html">Relaciones de potencias</a></li>
+              </ul>
+            </li>
+            <li onclick="javascript:show('smenu2','img2');"><span>Maravillas aritméticas</span><i id="img2"
+                style="transform:rotate(180deg);">&#8711;</i>
+              <ul class="flex-row d-block" id="smenu2">
+
+                <li><a class="select" href="multi-miss.html">Multiplicación</a></li>
+                <li><a href="multi-11.html">Multiplicación por 11</a></li>
+                <li><a href="multi-21.html">Multiplicación por 21, 31, 41,...</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="test">
+          <h4>Ejercicios I</h4>
+          <p>A continuación se proponen algunos ejercicios de la parte uno.</p>
+          <div class="flex-row jc-around">
+            <ol>
+              <li>96 × 96 =</li>
+              <li>97 × 95 =</li>
+              <li>95 × 95 =</li>
+              <li>98 × 95 =</li>
+            </ol>
+            <ol>
+              <li>98 × 94 =</li>
+              <li>97 × 94 =</li>
+              <li>98 × 92 =</li>
+              <li>97 × 93 =</li>
+            </ol>
+          </div>
+        </div>
+        <div class="test">
+          <h4>Ejercicios II</h4>
+          <p>Los siguientes ejercicios corresponden a la parte dos de este tema.</p>
+          <div class="flex-row jc-around">
+            <ol>
+              <li>43 × 47 =</li>
+              <li>37 × 33 =</li>
+              <li>65 × 65 =</li>
+              <li>52 × 58 =</li>
+            </ol>
+            <ol>
+              <li>96 × 94 =</li>
+              <li>85 × 85 =</li>
+              <li>77 × 73 =</li>
+              <li>24 × 26 =</li>
+            </ol>
+          </div>
+        </div>
+      </aside>
+    </main>
+    <footer class="footer bgc-1 flex-row wrap ac-strech color-2">
+      <section class="foot-nav f-grow1 pyx-12">
+        <h5 class="mb-1">Mapa web</h5>
+        <a href="index.html">Inicio</a>
+        <a href="numbers.html">Los números</a>
+        <a href="fractals.html">Fractales</a>
+        <a href="popurri.html">Popurrí</a>
+      </section>
+      <section class="foot-contact f-grow1 pyx-12">
+        <h5 class="mb-1">Contacto</h5>
+        <address class="flex-row">
+          <a href="https://www.linkedin.com/in/rguevaraponce/"><i class="icon-linkedin"></i></a>
+          <a href="http://richi071175@gmail.com"><i class="icon-envelop"></i></a>
+          <a href="https://github.com/santi-gp"><i class="icon-github"></i></a>
+        </address>
+      </section>
+      <section class="foot-copyright f-basis100 txt-center bgc-black f-grow1 px-2">
+        <h5 class="my-1">Copyright &copy;</h5>
+      </section>
+    </footer>
+  </div>
+</body>
+
+</html>

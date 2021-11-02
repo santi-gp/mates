@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Maravillas matemáticas" />
+  <meta name="keywords" content="HTML,CSS,JavaScript" />
+  <meta name="author" content="Ricardo" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="css/main.css" type="text/css" rel="stylesheet" />
+  <link href="css/styles.css" type="text/css" rel="stylesheet" />
+  <link href="css/responsive.css" type="text/css" rel="stylesheet" />
+  <link href="css/fonts.css" type="text/css" rel="stylesheet" />
+  <script src="js/nav-responsive.js"></script>
+  <script src="js/nav-accordion.js"></script>
+  <title>Matemáticas</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="bgc-1 flex-row jc-between ai-center">
+      <div class="logo-site px-2"><i class="icon-logo"></i></div>
+      <div class="name-site">
+        <h1>Maravillas</h1>
+        <h4>Matemáticas</h4>
+      </div>
+      <div class="nav-responsive px-2 txt-right"><i onclick="menu();" class="icon-bar"></i></div>
+    </header>
+    <nav id="nav" class="nav bgc-3">
+      <ul class="flex-row">
+        <li>
+          <a href="index.html"><span><i class="icon-home"></i></span><span>Inicio</span></a>
+        </li>
+        <li>
+          <a href="numbers.html"><span><i class="icon-numerical"></i></span><span>Los números</span></a>
+        </li>
+        <li>
+          <a class="activated" href="fractals.html"><span><i class="icon-fractal"></i></span><span>Fractales</span></a>
+        </li>
+        <li>
+          <a href="popurri.html"><span><i class="icon-project"></i></span><span>Popurrí</span></a>
+        </li>
+      </ul>
+    </nav>
+    <main class="flex-row">
+      <article class="p-2">
+        <h6>Fractales / Triángulo de Sierpinski</h6>
+        <div class="responsive2">
+          <input type="checkbox" name="group" id="show-nav" />
+          <label for="show-nav"><span>Fractales</span><i>&#8711;</i></label>
+          <ul class="show-menu">
+            <li><a href="cantor-set.html">Conjunto de Cantor</a></li>
+            <li><a href="cantor-triangle.html">Triángulo de Cantor</a></li>
+            <li><a href="cantor-dust.html">Polvo de Cantor</a></li>
+            <li><a class="select" href="sierp-triangle.html">Triángulo de Sierpinski</a></li>
+            <li><a href="sierp-carpet.html">Alfombra de Sierpinski</a></li>
+            <li><a href="koch-curve.html">Curva de Koch</a></li>
+            <li><a href="koch-snow.html">Copo de Nieve</a></li>
+          </ul>
+        </div>
+        <h2>Triángulo de Sierpinski</h2>
+        <section>
+          <h3>Construcción</h3>
+          <div>
+            <p>Nuestro próximo fractal clásico es aproximadamente 40 años más joven que el conjunto de Cantor. Este
+              fue introducido por el gran matemático polaco Waclaw Sierpinski (1882-1969) en 1916.</p>
+            <p>La construcción geométrica básica del triángulo de Sierpinski es la siguiente:</p>
+            <ol>
+              <li>Comenzamos con un triángulo en el plano y luego aplicamos un esquema repetitivo de operaciones (cuando
+                decimos triángulo, nos referimos a un triángulo con relleno negro).
+                <figure class="flex-row jc-center py-2">
+                  <svg width="100" height="87">
+                    <defs>
+                      <polygon id="Triangle1" points="0,86.6025 100,86.6025 50,0" fill="black" />
+                    </defs>
+                    <use xlink:href="#Triangle1" />
+                  </svg>
+                </figure>
+              </li>
+              <li>Elige los puntos medios de sus tres lados. Junto con los antiguos vértices del triángulo original,
+                estos
+                puntos medianos definen cuatro triángulos congruentes de los cuales extraemos el centro.
+                <figure class="flex-row jc-center py-2">
+                  <svg width="100" height="87">
+                    <defs>
+                      <polygon id="Triangle" points="0,86.6025 100,86.6025 50,0" fill="black" />
+                      <g id="Image1">
+                        <use xlink:href="#Triangle" transform="translate(0,43.3013) scale(0.5)" />
+                        <use xlink:href="#Triangle" transform="translate(50,43.3013) scale(0.5)" />
+                        <use xlink:href="#Triangle" transform="translate(25,0) scale(0.5)" />
+                      </g>
+                    </defs>
+                    <use xlink:href="#Image1" />
+                  </svg>
+                </figure>
+              </li>
+              <li>Esto completa el paso básico de la construcción. En otras palabras, después del primer paso tenemos
+                tres
+                triángulos congruentes cuyos lados tienen exactamente la mitad del tamaño del triángulo original y que
+                tocan
+                tres puntos que son vértices comunes de dos triángulos contiguos.</li>
+              <li>Ahora seguimos el mismo procedimiento con los tres triángulos restantes y repetimos.</li>
+            </ol>
+          </div>
+        </section>
+        <section>
+          <input type="checkbox" name="group" id="option-2" />
+          <h3><label for="option-2">Perímetro total</label></h3>
+          <div class="hidden">
+          <ol>
+            <li>Supongamos que el perímetro inicial del triángulo es <var>P<sub>0</sub> = &rho;</var></li>
+            <li>Cuando dividimos el triángulo inicial en 4 triángulos todos ellos de igual perímetro, y retiramos el
+              triángulo central
+              el perímetro será <var>P<sub>1</sub> = (4/3)&rho;</var>.</li>
+            <li>Cuando dividimos los triángulos más pequeños cada uno en 4 triángulos de igual perímetro, cada uno de
+              los nuevos triángulos
+              tendrá perímetro 1/3 del perímetro del triángulo de la parte (2) (que también pasa a ser 1/3). Así que el
+              perímetro de estos triángulos
+              aún más pequeños es 1/3&times;1/3 = 1/9. Por otra parte, existen 4&times;4 = 16 de estos triángulos. Así
+              que el perímetro
+              será <var>P<sub>2</sub> = (4/3)<sup>2</sup>&rho;</var>.</li>
+            <li>Podemos ver que en el paso <var>n</var>, el perímetro será <var>P<sub>n</sub> =
+                (4/3)<sup>n</sup>&rho;</var>. Esto significa
+              que el perímetro del paso anterior se multiplica por 4/3. Así que después de hacer este proceso hasta el
+              infinito, el perímetro total
+              convergerá al infinito.</li>
+          </ol>
+          </div>
+        </section>
+        <section>
+          <input type="checkbox" name="group" id="option-3" />
+          <h3><label for="option-3">Área total</label></h3>
+          <div class="hidden">
+          <ol>
+            <li>Supongamos que el área inicial del triángulo es <var>A<sub>0</sub> = &lambda;</var></li>
+            <li>Cuando dividimos el triángulo inicial en 4 triángulos todos ellos de igual tamaño, y retiramos el
+              triángulo central
+              el área será <var>A<sub>1</sub> = (3/4)&lambda;</var>.</li>
+            <li>Cuando dividimos los triángulos más pequeños cada uno en 4 triángulos de igual tamaño, cada uno de los
+              nuevos triángulos
+              tendrá área 1/4 del área del triángulo de la parte (2) (que también pasa a ser 1/4). Así que el área de
+              estos triángulos
+              aún más pequeños es 1/4&times;1/4 = 1/16. Por otra parte, existen 3&times;3 = 9 de estos triángulos. Así
+              que el área será
+              es <var>A<sub>2</sub> = (3/4)<sup>2</sup>&lambda;</var>.</li>
+            <li>Podemos ver que en el paso <var>n</var>, el área será <var>A<sub>n</sub> =
+                (3/4)<sup>n</sup>&lambda;</var>. Esto significa que el
+              área del paso anterior se multiplica por 3/4. Así que después de hacer este proceso hasta el infinito, el
+              área total será cero.</li>
+          </ol>
+          </div>
+        </section>
+      </article>
+      <aside class="aside bgc-2 flex-column ai-center p-2">
+        <div class="secondary">
+          <ul class="accordion">
+            <li onclick="javascript:show('smenu1','img1');"><span>Cantor</span><i id="img1"
+                style="transform:rotate(0deg);">&#8711;</i>
+              <ul class="d-none" id="smenu1">
+
+                <li><a href="cantor-set.html">Conjunto de Cantor</a></li>
+                <li><a href="cantor-triangle.html">Triángulo de Cantor</a></li>
+                <li><a href="cantor-dust.html">Polvo de Cantor</a></li>
+              </ul>
+            </li>
+            <li onclick="javascript:show('smenu2','img2');"><span>Sierpinski</span><i id="img2"
+                style="transform:rotate(180deg);">&#8711;</i>
+              <ul class="flex-row" id="smenu2" style="display: block;">
+
+                <li><a class="select" href="sierp-triangle.html">Triángulo de Sierpinski</a></li>
+                <li><a href="sierp-carpet.html">Alfombra de Sierpinski</a></li>
+              </ul>
+            </li>
+            <li onclick="javascript:show('smenu3','img3');"><span>Von Koch</span><i id="img3"
+                style="transform:rotate(0deg);">&#8711;</i>
+              <ul class="flex-row" id="smenu3" style="display: none;">
+
+                <li><a href="koch-curve.html">Curva de Koch</a></li>
+                <li><a href="koch-snow.html">Copo de Nieve</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="secondary">
+          <p>La siguiente figura muestra la 4 primeras iteraciones de la construcción del triángulo de Sierpinski.</p>
+          <figure class="flex-row jc-center py-2">
+            <svg width="150" height="130">
+              <defs>
+                <polygon id="triangle" points="0,129.9038 150,129.9038 75,0" fill="black" />
+                <g id="image1">
+                  <use xlink:href="#triangle" transform="translate(0,64.9519) scale(0.5)" />
+                  <use xlink:href="#triangle" transform="translate(75,64.9519) scale(0.5)" />
+                  <use xlink:href="#triangle" transform="translate(37.5,0) scale(0.5)" />
+                </g>
+                <g id="image2">
+                  <use xlink:href="#image1" transform="translate(0,64.9519) scale(0.5)" />
+                  <use xlink:href="#image1" transform="translate(75,64.9519) scale(0.5)" />
+                  <use xlink:href="#image1" transform="translate(37.5,0) scale(0.5)" />
+                </g>
+                <g id="image3">
+                  <use xlink:href="#image2" transform="translate(0,64.9519) scale(0.5)" />
+                  <use xlink:href="#image2" transform="translate(75,64.9519) scale(0.5)" />
+                  <use xlink:href="#image2" transform="translate(37.5,0) scale(0.5)" />
+                </g>
+                <g id="image4">
+                  <use xlink:href="#image3" transform="translate(0,64.9519) scale(0.5)" />
+                  <use xlink:href="#image3" transform="translate(75,64.9519) scale(0.5)" />
+                  <use xlink:href="#image3" transform="translate(37.5,0) scale(0.5)" />
+                </g>
+              </defs>
+              <use xlink:href="#image4" />
+            </svg>
+          </figure>
+        </div>
+      </aside>
+    </main>
+    <footer class="footer bgc-1 flex-row wrap ac-strech color-2">
+      <section class="foot-nav f-grow1 pyx-12">
+        <h5 class="mb-1">Mapa web</h5>
+        <a href="index.html">Inicio</a>
+        <a href="numbers.html">Los números</a>
+        <a href="fractals.html">Fractales</a>
+        <a href="popurri.html">Popurrí</a>
+      </section>
+      <section class="foot-contact f-grow1 pyx-12">
+        <h5 class="mb-1">Contacto</h5>
+        <address class="flex-row">
+          <a href="https://www.linkedin.com/in/rguevaraponce/"><i class="icon-linkedin"></i></a>
+          <a href="http://richi071175@gmail.com"><i class="icon-envelop"></i></a>
+          <a href="https://github.com/santi-gp"><i class="icon-github"></i></a>
+        </address>
+      </section>
+      <section class="foot-copyright f-basis100 txt-center bgc-black f-grow1 px-2">
+        <h5 class="my-1">Copyright &copy;</h5>
+      </section>
+    </footer>
+  </div>
+</body>
+
+</html>

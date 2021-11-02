@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Maravillas matemáticas" />
+  <meta name="keywords" content="HTML,CSS,JavaScript" />
+  <meta name="author" content="Ricardo" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="css/main.css" type="text/css" rel="stylesheet" />
+  <link href="css/styles.css" type="text/css" rel="stylesheet" />
+  <link href="css/responsive.css" type="text/css" rel="stylesheet" />
+  <link href="css/fonts.css" type="text/css" rel="stylesheet" />
+  <script src="js/nav-responsive.js"></script>
+  <script src="js/nav-accordion.js"></script>
+  <title>Matemáticas</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="bgc-1 flex-row jc-between ai-center">
+      <div class="logo-site px-2"><i class="icon-logo"></i></div>
+      <div class="name-site">
+        <h1>Maravillas</h1>
+        <h4>Matemáticas</h4>
+      </div>
+      <div class="nav-responsive px-2 txt-right"><i onclick="menu();" class="icon-bar"></i></div>
+    </header>
+    <nav id="nav" class="nav bgc-3">
+      <ul class="flex-row">
+        <li>
+          <a href="index.html"><span><i class="icon-home"></i></span><span>Inicio</span></a>
+        </li>
+        <li>
+          <a class="activated" href="numbers.html"><span><i class="icon-numerical"></i></span><span>Los
+              números</span></a>
+        </li>
+        <li>
+          <a href="fractals.html"><span><i class="icon-fractal"></i></span><span>Fractales</span></a>
+        </li>
+        <li>
+          <a href="popurri.html"><span><i class="icon-project"></i></span><span>Popurrí</span></a>
+        </li>
+      </ul>
+    </nav>
+    <main class="flex-row">
+      <article class="p-2">
+        <h6>Los Números / Números palíndromos</h6>
+        <div class="responsive2">
+          <input type="checkbox" name="group" id="show-nav" />
+          <label for="show-nav"><span>Los Números</span><i>&#8711;</i></label>
+          <ul class="show-menu">
+            <li><a href="numbers-patterns.html">Patrones sorprendentes</a></li>
+            <li><a href="numbers-1089.html">EL número 1089</a></li>
+            <li><a class="select" href="numbers-palindromo.html">Números palíndromos</a></li>
+            <li><a href="numbers-power.html">Relaciones de potencias</a></li>
+            <li><a href="multi-miss.html">Multiplicación</a></li>
+            <li><a href="multi-11.html">Multiplicación por 11</a></li>
+            <li><a href="multi-21.html">Multiplicación por 21, 31, 41,...</a></li>
+          </ul>
+        </div>
+        <h2>Belleza de los números</h2>
+        <section>
+          <h3>Números palíndromos</h3>
+          <div>
+            <p>Un palíndromo es una palabra, frase o oración que lee lo mismo en ambas direcciones. Aquí hay
+              algunos palíndromos divertidos:</p>
+            <div class="equation">
+              <span>OSO</span>
+              <span>RADAR</span>
+              <span>RODADOR</span>
+              <span>AMOR A ROMA</span>
+              <span>ANA LAVA LANA</span>
+              <span>LA RUTA NATURAL</span>
+            </div>
+            <p>Los números palíndromos son los que se leen lo mismo en ambas direcciones. Esto nos lleva a
+              considerar que las fechas pueden ser una fuente para algunas inspecciones simétricas.
+              Por ejemplo, el año 2002 es un palíndromo, como el 1991. Hubo varias fechas en octubre
+              de 2001 que aparecieron como palíndromos cuando se escribieron en estilo americano: 10/1/01,
+              10/22/01 y otros. En febrero, los europeos tuvieron el último momento palíndromo a las 8:02
+              p.m. El 20 de febrero de 2002, ya que lo habrían escrito como 20:02, 20-02-2002.</p>
+            <p>Más allá, las cuatro primeras potencias de 11 son números palíndromos:</p>
+            <div class="equation">
+              <div>11<sup>1</sup> = 11</div>
+              <div>11<sup>2</sup> = 121 </div>
+              <div>11<sup>3</sup> = 1331</div>
+              <div>11<sup>4</sup> = 14641</div>
+            </div>
+            <p>Un número palíndromo puede ser un número primo o un número compuesto. Por ejemplo,
+              151 es un palíndromo primo y 171 es un palíndromo compuesto. Sin embargo, con la excepción
+              de 11, un primo palíndromo debe tener un número impar de dígitos.</p>
+            <p>Es interesante mostrar cómo se puede generar un número palíndromo a
+              partir de cualquier número dado. Todo lo que se necesita hacer es agregar continuamente un
+              número a su inversión (es decir, el número escrito en el orden inverso de los dígitos)
+              hasta que se llega a un palíndromo.</p>
+            <p>Por ejemplo, un palíndromo puede ser alcanzado con una sola adición, tal como con el
+              número de partida 23:</p>
+            <div class="equation">
+              23 + 32 = 55,
+            </div>
+            <p>un palíndromo</p>
+            <p>O puede tomar dos pasos, como con el número de inicio 75:</p>
+            <div class="equation">
+              <div>75 + 57 = 132</div>
+              <div>132 + 231 = 363,</div>
+            </div>
+            <p>un palíndromo</p>
+            <p>O puede tomar tres pasos, como con el número de inicio 86:</p>
+            <div class="equation">
+              <div>86 + 68 = 154</div>
+              <div>154 + 451 = 605</div>
+              <div>605 + 506 = 1111,</div>
+            </div>
+            <p>un palíndromo</p>
+            <p>El número de partida 97 requerirá seis pasos para alcanzar un palíndromo, mientras que el
+              número 98 requerirá 24 pasos.</p>
+            <p>Tenga cuidado sobre el uso del número de partida 196; Este va mucho más allá de sus capacidades
+              para alcanzar un palíndromo.</p>
+            <p>Hay algunos patrones encantadores cuando se trata de números palíndromos. Por ejemplo,
+              los números que producen cubos palíndromos son palíndromos.</p>
+            <p>Es interesante encontrar más propiedades de números palíndromos -son
+              divertidos con los que jugar.</p>
+          </div>
+        </section>
+      </article>
+      <aside class="aside bgc-2 flex-column ai-center p-2">
+        <div class="secondary">
+          <ul class="accordion">
+            <li onclick="javascript:show('smenu1','img1');"><span>Belleza de los números</span><i id="img1"
+                style="transform:rotate(180deg);">&#8711;</i>
+              <ul class="flex-row" id="smenu1" style="display: block;">
+
+                <li><a href="numbers-patterns.html">Patrones sorprendentes</a></li>
+                <li><a href="numbers-1089.html">EL número 1089</a></li>
+                <li><a class="select" href="numbers-palindromo.html">Números palíndromos</a></li>
+                <li><a href="numbers-power.html">Relaciones de potencias</a></li>
+              </ul>
+            </li>
+            <li onclick="javascript:show('smenu2','img2');"><span>Maravillas aritméticas</span><i id="img2"
+                style="transform:rotate(0deg);">&#8711;</i>
+              <ul class="d-none" id="smenu2">
+
+                <li><a href="multi-miss.html">Multiplicación</a></li>
+                <li><a href="multi-11.html">Multiplicación por 11</a></li>
+                <li><a href="multi-21.html">Multiplicación por 21, 31, 41,...</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </main>
+    <footer class="footer bgc-1 flex-row wrap ac-strech color-2">
+      <section class="foot-nav f-grow1 pyx-12">
+        <h5 class="mb-1">Mapa web</h5>
+        <a href="index.html">Inicio</a>
+        <a href="numbers.html">Los números</a>
+        <a href="fractals.html">Fractales</a>
+        <a href="popurri.html">Popurrí</a>
+      </section>
+      <section class="foot-contact f-grow1 pyx-12">
+        <h5 class="mb-1">Contacto</h5>
+        <address class="flex-row">
+          <a href="https://www.linkedin.com/in/rguevaraponce/"><i class="icon-linkedin"></i></a>
+          <a href="http://richi071175@gmail.com"><i class="icon-envelop"></i></a>
+          <a href="https://github.com/santi-gp"><i class="icon-github"></i></a>
+        </address>
+      </section>
+      <section class="foot-copyright f-basis100 txt-center bgc-black f-grow1 px-2">
+        <h5 class="my-1">Copyright &copy;</h5>
+      </section>
+    </footer>
+  </div>
+</body>
+
+</html>

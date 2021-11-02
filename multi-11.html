@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Maravillas matemáticas" />
+  <meta name="keywords" content="HTML,CSS,JavaScript" />
+  <meta name="author" content="richi" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="css/main.css" type="text/css" rel="stylesheet" />
+  <link href="css/styles.css" type="text/css" rel="stylesheet" />
+  <link href="css/responsive.css" type="text/css" rel="stylesheet" />
+  <link href="css/fonts.css" type="text/css" rel="stylesheet" />
+  <script src="js/nav-responsive.js"></script>
+  <script src="js/nav-accordion.js"></script>
+  <title>Matemáticas</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="bgc-1 flex-row jc-between ai-center">
+      <div class="logo-site px-2"><i class="icon-logo"></i></div>
+      <div class="name-site">
+        <h1>Maravillas</h1>
+        <h4>Matemáticas</h4>
+      </div>
+      <div class="nav-responsive px-2 txt-right"><i onclick="menu();" class="icon-bar"></i></div>
+    </header>
+    <nav id="nav" class="nav bgc-3">
+      <ul class="flex-row">
+        <li>
+          <a href="index.html"><span><i class="icon-home"></i></span><span>Inicio</span></a>
+        </li>
+        <li>
+          <a class="activated" href="numbers.html"><span><i class="icon-numerical"></i></span><span>Los
+              números</span></a>
+        </li>
+        <li>
+          <a href="fractals.html"><span><i class="icon-fractal"></i></span><span>Fractales</span></a>
+        </li>
+        <li>
+          <a href="popurri.html"><span><i class="icon-project"></i></span><span>Popurrí</span></a>
+        </li>
+      </ul>
+    </nav>
+    <main class="flex-row">
+      <article class="p-2">
+        <h6>Los Números / Multiplicación por 11</h6>
+        <div class="responsive2">
+          <input type="checkbox" name="group" id="show-nav" />
+          <label for="show-nav"><span>Los Números</span><i>&#8711;</i></label>
+          <ul class="show-menu">
+            <li><a href="numbers-patterns.html">Patrones sorprendentes</a></li>
+            <li><a href="numbers-1089.html">EL número 1089</a></li>
+            <li><a href="numbers-palindromo.html">Números palíndromos</a></li>
+            <li><a href="numbers-power.html">Relaciones de potencias</a></li>
+            <li><a href="multi-miss.html">Multiplicación</a></li>
+            <li><a class="select" href="multi-11.html">Multiplicación por 11</a></li>
+            <li><a href="multi-21.html">Multiplicación por 21, 31, 41,...</a></li>
+          </ul>
+        </div>
+        <h2>Multiplicaciones rápidas</h2>
+        <section>
+          <h3>Multiplicando por 11</h3>
+          <div>
+            <p>La siguiente técnica es una manera muy ingeniosa de multiplicar por 11. Porque es tan simple,
+              créanlo o no, incluso más fácil que hacerlo con una calculadora.</p>
+            <p>La regla es muy simple: Para multiplicar un número de dos dígitos por 11, solo tiene que
+              agregar los dos dígitos y colocar la suma entre los dos dígitos.</p>
+            <p>Por ejemplo, supongamos que necesitamos multiplicar</p>
+            <div class="flex-row jc-center">
+              <div class="multi1">
+                <span class="img1">
+                  &nbsp;
+                </span>
+                <span class="img2">
+                  45
+                </span>
+                <span class="img3">
+                  &times;
+                </span>
+                <span class="img4">
+                  11
+                </span>
+                <span class="img5">
+                </span>
+              </div>
+            </div>
+            <p>De acuerdo con la regla, sumamos 4 y 5 y lo colocamos entre el 4 y 5 para obtener</p>
+            <div class="flex-row jc-center">
+              [4][4 + 5][5] = 495.
+            </div>
+            <p>Es tan simple como eso.</p>
+            <p>Hagámoslo un poco más difícil. Si la suma de los dos dígitos es mayor que 9, entonces
+              colocamos el dígito de las unidades entre los dos dígitos del número multiplicado por 11 y
+              <q>llevamos</q> el dígito de las decenas para sumarlo con el dígito de las centenas del multiplicando.
+            </p>
+            <p>Probemos con la siguiente multiplicación</p>
+            <div class="flex-row jc-center">
+              <div class="multi1">
+                <span class="img1">
+                  &nbsp;
+                </span>
+                <span class="img2">
+                  78
+                </span>
+                <span class="img3">
+                  &times;
+                </span>
+                <span class="img4">
+                  11
+                </span>
+                <span class="img5">
+                </span>
+              </div>
+            </div>
+            <p>Puesto que 7 + 8 = 15, colocamos el 5 entre el 7 y el 8 y sumamos el 1 al 7, para obtener</p>
+            <div class="flex-row jc-center">
+              [7 + 1] [5] [8] = 858.
+            </div>
+            <p>Ahora vamos ampliar este procedimiento a números de más de dos dígitos. Por ejemplo, multipliquemos</p>
+            <div class="flex-row jc-center">
+              <div class="multi1">
+                <span class="img1">
+                  &nbsp;
+                </span>
+                <span class="img2">
+                  12345
+                </span>
+                <span class="img3 txt-right">
+                  &times;
+                </span>
+                <span class="img4 txt-right">
+                  11
+                </span>
+                <span class="img5">
+                </span>
+              </div>
+            </div>
+            <p>Aquí comenzamos con el dígito del lado derecho y sumamos cada par de dígitos que van a la izquierda:</p>
+            <div class="flex-row jc-center">
+              1 [1+ 2] [2 + 3] [3 + 4] [4 + 5] 5 = 135795
+            </div>
+            <p>Si la suma de dos dígitos es mayor que 9, utilice el procedimiento descrito anteriormente:
+              Coloque el dígito de las unidades de forma apropiada y lleve el dígito de las decenas.
+              Haremos un ejemplo de estas multiplicaciones aquí. Multipliquemos</p>
+            <div class="flex-row jc-center">
+              <div class="multi1">
+                <span class="img1">
+                  &nbsp;
+                </span>
+                <span class="img2">
+                  56789
+                </span>
+                <span class="img3 txt-right">
+                  &times;
+                </span>
+                <span class="img4 txt-right">
+                  11
+                </span>
+                <span class="img5">
+                </span>
+              </div>
+
+            </div>
+            <p>Llevamos a cabo el proceso paso a paso:</p>
+            <div class="flex-row jc-center">
+              <div class="flex-column">
+                <div>5 [5 + 6] [6 + 7] [7 + 8] [8 + 9]9</div>
+                <div>5 [5 + 6] [6 + 7] [7 + 8] [17] 9 </div>
+                <div>5 [5 + 6] [6 + 7] [7 + 8 + 1] [7] 9 </div>
+                <div>5 [5 + 6][6 + 7][16][7]9 </div>
+                <div>5 [5 + 6][6 + 7 + 1][6][7]9 </div>
+                <div>5 [5 + 6][14][6][7]9</div>
+                <div>5 [5 + 6 + 1][4][6][7]9</div>
+                <div>5 [12][4][6][7]9</div>
+                <div>[5 + 1][2][4][6][7]9 </div>
+                <div>[6][2][4][6][7]9</div>
+                <div>624679</div>
+              </div>
+            </div>
+            <p>Cualquier persona estará entusiasmada con este procedimiento, porque es tan simple. Se irá a
+              casa y lo mostrarán a sus familiares y amigos. Al mostrarlo y hacerlo, se quedará
+              con ellos.</p>
+          </div>
+        </section>
+      </article>
+      <aside class="aside bgc-2 flex-column ai-center p-2">
+        <div class="secondary">
+          <ul class="accordion">
+            <li onclick="javascript:show('smenu1','img1');"><span>Belleza de los números</span><i id="img1"
+                style="transform:rotate(0deg);">&#8711;</i>
+              <ul class="d-none" id="smenu1">
+                <!-- <li><a href="introduction-1.html">Introducción</a></li> -->
+                <li><a href="numbers-patterns.html">Patrones sorprendentes</a></li>
+                <li><a href="numbers-1089.html">EL número 1089</a></li>
+                <li><a href="numbers-palindromo.html">Números palíndromos</a></li>
+                <li><a href="numbers-power.html">Relaciones de potencias</a></li>
+              </ul>
+            </li>
+            <li onclick="javascript:show('smenu2','img2');"><span>Maravillas aritméticas</span><i id="img2"
+                style="transform:rotate(180deg);">&#8711;</i>
+              <ul class="flex-row" id="smenu2" style="display: block;">
+                <!-- <li><a href="introduction-2.html">Introducción</a></li> -->
+                <li><a href="multi-miss.html">Multiplicación</a></li>
+                <li><a class="select" href="multi-11.html">Multiplicación por 11</a></li>
+                <li><a href="multi-21.html">Multiplicación por 21, 31, 41,...</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </main>
+    <footer class="footer bgc-1 flex-row wrap ac-strech color-2">
+      <section class="foot-nav f-grow1 pyx-12">
+        <h5 class="mb-1">Mapa web</h5>
+        <a href="index.html">Inicio</a>
+        <a href="numbers.html">Los números</a>
+        <a href="fractals.html">Fractales</a>
+        <a href="popurri.html">Popurrí</a>
+      </section>
+      <section class="foot-contact f-grow1 pyx-12">
+        <h5 class="mb-1">Contacto</h5>
+        <address class="flex-row">
+          <a href="https://www.linkedin.com/in/rguevaraponce/"><i class="icon-linkedin"></i></a>
+          <a href="http://richi071175@gmail.com"><i class="icon-envelop"></i></a>
+          <a href="https://github.com/santi-gp"><i class="icon-github"></i></a>
+        </address>
+      </section>
+      <section class="foot-copyright f-basis100 txt-center bgc-black f-grow1 px-2">
+        <h5 class="my-1">Copyright &copy;</h5>
+      </section>
+    </footer>
+  </div>
+</body>
+
+</html>
