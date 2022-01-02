@@ -203,7 +203,7 @@ footer section a {
 }
 
 .foot-copyright h5::after {
-    content: " 2021 | Ricardo Guevara.";
+    content: " 2022 | Ricardo Guevara.";
 }
 
 address a {
@@ -224,16 +224,6 @@ figcaption {
 
 
 /*Math styles*/
-.patterns {
-    margin: 1% auto;
-    display: grid;
-    grid-template-columns: auto;
-    align-items: center;
-}
-
-.patterns div {
-    margin: 0 auto;
-}
 
 .equation {
     margin: 1% auto;
